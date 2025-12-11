@@ -34,6 +34,7 @@
 #include "aws_clientcredential_keys.h"
 #include "iot_default_root_certificates.h"
 #include "core_pki_utils.h"
+#include "iot_logging_task.h"
 
 /* mbedTLS includes. */
 #include "mbedtls/platform.h"

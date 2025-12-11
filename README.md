@@ -1,14 +1,26 @@
-# FreeRTOS AWS Reference Integrations
+# Realtek's AWS Solution
 
-## How to use
-This is the library sdk which provides Amazon freertos examples. To make sure example working correctly, please download the working chip sdk from related page with this submodule updated.
+- [Getting Started](#getting-started)
+- [Supported Integrated Circuits (ICs)](#supported-integrated-circuits-ics)
+- [Getting Started](#getting-started)
 
-|Chip         |          Link       |     Supported branch link      |
-|:----------- |:---------------------:| :---------------------:|
-|Ameba Z2     | https://github.com/Ameba-AIoT/ameba-rtos-z2 | https://github.com/Ameba-AIoT/amazon-freertos/tree/amebaZ2-7.1d-202107.00-LTS |
-|Ameba D     | https://github.com/Ameba-AIoT/ameba-rtos-d/ | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
-|Ameba DPlus     | https://github.com/Ameba-AIoT/ameba-rtos | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
-|Ameba Smart     | https://github.com/Ameba-AIoT/ameba-rtos | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
+## Getting Started
+
+For more information on FreeRTOS, refer to the [Getting Started section of FreeRTOS webpage](https://aws.amazon.com/freertos).
+
+To directly access the **Getting Started Guide** for supported hardware platforms, click the corresponding link in the Supported Hardware section below.
+
+For detailed documentation on FreeRTOS, refer to the [FreeRTOS User Guide](https://aws.amazon.com/documentation/freertos).
+
+## Supported Integrated Circuits (ICs)
+
+The following are the supported ICs with the corresponding link to the GitHub SDK.
+
+| Chip                       | Link                                        | Supported branch link                               |
+|----------------------------|---------------------------------------------|-----------------------------------------------------|
+| Ameba Z2                   | https://github.com/Ameba-AIoT/ameba-rtos-z2 | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
+| Ameba D                    | https://github.com/Ameba-AIoT/ameba-rtos-d/ | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
+| Ameba Dplus / Lite / Smart | https://github.com/Ameba-AIoT/ameba-rtos    | https://github.com/Ameba-AIoT/ameba-amazon-freertos |
 
 
 ## Cloning
@@ -18,25 +30,17 @@ Note: If you download the ZIP file provided by GitHub UI, you will not get the c
 
 To clone using HTTPS:
 ```
-git clone https://github.com/ambiot/amazon-freertos.git --recurse-submodules
+git clone https://github.com/Ameba-AIoT/ameba-amazon-freertos.git --recurse-submodules
 ```
 Using SSH:
 ```
-git clone git@github.com:ambiot/amazon-freertos.git --recurse-submodules
+git clone git@github.com:Ameba-AIoT/ameba-amazon-freertos.git --recurse-submodules
 ```
 
 If you have downloaded the repo without using the `--recurse-submodules` argument, you need to run:
 ```
 git submodule update --init --recursive
 ```
-
-## Getting Started
-
-For more information on FreeRTOS, refer to the [Getting Started section of FreeRTOS webpage](https://aws.amazon.com/freertos).
-
-To directly access the **Getting Started Guide** for supported hardware platforms, click the corresponding link in the Supported Hardware section below.
-
-For detailed documentation on FreeRTOS, refer to the [FreeRTOS User Guide](https://aws.amazon.com/documentation/freertos).
 
 ## Supported Hardware
 
@@ -55,38 +59,8 @@ The following MCU boards are supported for FreeRTOS:
     * IDE: [Visual Studio Community Edition](https://www.visualstudio.com/downloads/)
 
 
-## amazon-freeRTOS/projects
-The ```./projects``` folder contains the IDE test and demo projects for each vendor and their boards. The majority of boards can be built with both IDE and cmake (there are some exceptions!). Please refer to the Getting Started Guides above for board specific instructions.
-
 ## Mbed TLS License
 This repository uses Mbed TLS under Apache 2.0
-
-# Support list
-
-## AmebaZ2
-
-(WIP!)
-
-## AmebaD
-Work with 
-
-sdk-amebad_v6.2C-RC.tar.gz + 
-
-6.2_patch_integrated_240816_821f1f1d.zip +
-
-6.2c_patch_Support_Amazon_v202406_LTS_w240816_XXXXXX_(v01).zip (TODO!)
-
-
-## AmebaDplus
-Work with
-
-(WIP!)
-
-
-## AmebaSmart
-Work with
-
-(WIP!)
 
 # History link
 

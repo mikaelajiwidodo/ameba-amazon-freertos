@@ -1,0 +1,10 @@
+menu "Amazon FreeRTOS"
+    config AMAZON_FREERTOS_EN
+        bool "Build Amazon FreeRTOS SDK"
+        default n
+    if AMAZON_FREERTOS_EN
+        config MBEDTLS_AMAZON_DEFINED
+            bool "MbedTLS Amazon Defined"
+            default n
+    endif
+endmenu
